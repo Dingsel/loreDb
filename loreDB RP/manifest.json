@@ -1,0 +1,20 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": ["Dingsel"]
+	},
+	"header": {
+		"name": "LoreDB",
+		"description": "",
+		"min_engine_version": [1, 19, 40],
+		"uuid": "3e702c5c-3b35-42b2-a384-b78861e82439",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "f019c399-a413-4a3e-a5c3-1a29315d628e",
+			"version": [1, 0, 0]
+		}
+	]
+}

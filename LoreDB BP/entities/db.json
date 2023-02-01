@@ -1,0 +1,50 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "dest:database",
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "gone": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 4,
+                "max": 4
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "database"
+                ]
+            },
+            "minecraft:inventory": {
+                "inventory_size": 51,
+                "can_be_siphoned_from": false,
+                "container_type": "container",
+                "private": false,
+                "restrict_to_owner": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            }
+        },
+        "events": {
+            "dest:despawn": {
+                "add": {
+                    "component_groups": [
+                        "gone"
+                    ]
+                }
+            }
+        }
+    }
+}

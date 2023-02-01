@@ -1,0 +1,25 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "dest:database",
+            "materials": {
+                "default": "zombie"
+            },
+            "textures": {
+                "default": "textures/entity/zombie/husk"
+            },
+            "geometry": {
+                "default": "geometry.zombie"
+            },
+            "scripts": {},
+            "render_controllers": [
+                "controller.render.zombie"
+            ],
+            "spawn_egg": {
+                "base_color": "#288483",
+                "overlay_color": "#2B7135"
+            }
+        }
+    }
+}
