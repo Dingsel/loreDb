@@ -110,19 +110,19 @@ class DB {
         return JSON.parse(lore[1])[key]
     }
 }
-const db = new DB("Test")
-
-
-world.events.blockBreak.subscribe(async () => {
-    let prev = await db.getDataAsync("blocks") ?? []
-    prev.push(Math.random())
-    console.warn(prev[0], prev[prev.length - 1])
-    await db.setDataAsync("blocks", prev)
-})
-
-system.runSchedule(async () => {
-    let prev = await db.getDataAsync("test") ?? []
-    prev.push(Math.random())
-    console.warn(JSON.stringify(prev).length)
-    await db.setDataAsync("test", prev)
-})
+//const db = new DB("Test")
+//
+//
+//world.events.blockBreak.subscribe(async () => {
+//    let prev = await db.getDataAsync("blocks") ?? []
+//    prev.push(Math.random())
+//    console.warn(prev[0], prev[prev.length - 1])
+//    await db.setDataAsync("blocks", prev)
+//})
+//
+//system.runSchedule(async () => {
+//    let prev = await db.getDataAsync("test") ?? []
+//    prev.push(Math.random())
+//    console.warn(JSON.stringify(prev).length)
+//    await db.setDataAsync("test", prev)
+//})
